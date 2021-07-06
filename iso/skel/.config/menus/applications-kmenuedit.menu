@@ -1,0 +1,142 @@
+<!DOCTYPE Menu PUBLIC '-//freedesktop//DTD Menu 1.0//EN' 'http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd'>
+<Menu>
+ <Menu>
+  <Name>Development</Name>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>Translation</Menuname>
+   <Menuname>Web Development</Menuname>
+   <Merge type="files"/>
+   <Filename>visual-studio-code.desktop</Filename>
+  </Layout>
+  <Exclude>
+   <Filename>org.kde.plasmaengineexplorer.desktop</Filename>
+   <Filename>org.kde.plasma.lookandfeelexplorer.desktop</Filename>
+   <Filename>org.kde.plasma.themeexplorer.desktop</Filename>
+   <Filename>assistant.desktop</Filename>
+   <Filename>designer.desktop</Filename>
+   <Filename>linguist.desktop</Filename>
+   <Filename>qdbusviewer.desktop</Filename>
+   <Filename>UserFeedbackConsole.desktop</Filename>
+   <Filename>cmake-gui.desktop</Filename>
+   <Filename>org.kde.cuttlefish.desktop</Filename>
+  </Exclude>
+ </Menu>
+ <Menu>
+  <Name>Internet</Name>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>Terminal</Menuname>
+   <Merge type="files"/>
+   <Filename>anydesk.desktop</Filename>
+   <Filename>firefox.desktop</Filename>
+   <Filename>google-chrome.desktop</Filename>
+   <Filename>teams.desktop</Filename>
+   <Filename>telegramdesktop.desktop</Filename>
+   <Filename>Zoom.desktop</Filename>
+   <Separator/>
+   <Menuname>More</Menuname>
+  </Layout>
+  <Exclude>
+   <Filename>bssh.desktop</Filename>
+   <Filename>bvnc.desktop</Filename>
+   <Filename>lftp.desktop</Filename>
+  </Exclude>
+ </Menu>
+ <Menu>
+  <Name>Multimedia</Name>
+  <Layout>
+   <Merge type="files"/>
+   <Filename>org.kde.elisa.desktop</Filename>
+   <Filename>fr.handbrake.ghb.desktop</Filename>
+   <Filename>org.kde.kdenlive.desktop</Filename>
+   <Filename>com.obsproject.Studio.desktop</Filename>
+   <Filename>vlc.desktop</Filename>
+   <Filename>webcamoid.desktop</Filename>
+   <Separator/>
+   <Merge type="menus"/>
+   <Menuname>More</Menuname>
+  </Layout>
+  <Exclude>
+   <Filename>qv4l2.desktop</Filename>
+   <Filename>qvidcap.desktop</Filename>
+  </Exclude>
+ </Menu>
+ <Menu>
+  <Name>System</Name>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>Terminal</Menuname>
+   <Merge type="files"/>
+   <Filename>org.kde.discover.desktop</Filename>
+   <Filename>org.kde.dolphin.desktop</Filename>
+   <Filename>org.kde.kinfocenter.desktop</Filename>
+   <Filename>calamares.desktop</Filename>
+   <Filename>org.kde.partitionmanager.desktop</Filename>
+   <Filename>org.kde.kdf.desktop</Filename>
+   <Filename>org.kde.konsole.desktop</Filename>
+   <Filename>org.kde.ksysguard.desktop</Filename>
+   <Filename>org.kde.kwikdisk.desktop</Filename>
+   <Separator/>
+   <Menuname>More</Menuname>
+  </Layout>
+  <Menu>
+   <Name>ScreenSavers</Name>
+   <Deleted/>
+  </Menu>
+  <Exclude>
+   <Filename>avahi-discover.desktop</Filename>
+   <Filename>lstopo.desktop</Filename>
+  </Exclude>
+ </Menu>
+ <Menu>
+  <Name>Utilities</Name>
+  <Layout>
+   <Merge type="files"/>
+   <Filename>org.kde.ark.desktop</Filename>
+   <Filename>org.kde.plasma.emojier.desktop</Filename>
+   <Filename>org.kde.filelight.desktop</Filename>
+   <Filename>org.kde.kate.desktop</Filename>
+   <Filename>kvantummanager.desktop</Filename>
+   <Filename>org.kde.spectacle.desktop</Filename>
+   <Filename>visual-studio-code.desktop</Filename>
+   <Separator/>
+   <Merge type="menus"/>
+   <Menuname>More</Menuname>
+  </Layout>
+  <Menu>
+   <Name>XUtilities</Name>
+   <Deleted/>
+  </Menu>
+  <Exclude>
+   <Filename>stoken-gui-small.desktop</Filename>
+   <Filename>stoken-gui.desktop</Filename>
+   <Filename>vim.desktop</Filename>
+  </Exclude>
+ </Menu>
+ <Menu>
+  <Name>.hidden</Name>
+  <Include>
+   <Filename>org.kde.plasmaengineexplorer.desktop</Filename>
+   <Filename>org.kde.plasma.lookandfeelexplorer.desktop</Filename>
+   <Filename>org.kde.plasma.themeexplorer.desktop</Filename>
+   <Filename>assistant.desktop</Filename>
+   <Filename>designer.desktop</Filename>
+   <Filename>linguist.desktop</Filename>
+   <Filename>qdbusviewer.desktop</Filename>
+   <Filename>UserFeedbackConsole.desktop</Filename>
+   <Filename>cmake-gui.desktop</Filename>
+   <Filename>org.kde.cuttlefish.desktop</Filename>
+   <Filename>bssh.desktop</Filename>
+   <Filename>bvnc.desktop</Filename>
+   <Filename>lftp.desktop</Filename>
+   <Filename>qv4l2.desktop</Filename>
+   <Filename>qvidcap.desktop</Filename>
+   <Filename>avahi-discover.desktop</Filename>
+   <Filename>lstopo.desktop</Filename>
+   <Filename>stoken-gui-small.desktop</Filename>
+   <Filename>stoken-gui.desktop</Filename>
+   <Filename>vim.desktop</Filename>
+  </Include>
+ </Menu>
+</Menu>

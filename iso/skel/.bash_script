@@ -1,0 +1,7 @@
+#!/bin/sh
+# useful scripts
+
+# check command history
+function h() {
+    history | grep $1 ;
+}

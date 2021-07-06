@@ -1,0 +1,190 @@
+set nu
+set relativenumber
+
+" Set Leaders Key 
+let mapleader = "\<Space>"
+
+" Quick Save
+nmap <leader>w :w<CR>
+
+" rust
+let g:rustfmt_autosave = 1
+let g:rustfmt_emit_files = 1
+let g:rustfmt_fail_silently = 0
+let g:rust_clip_command = 'xclip -selection clipboard'
+
+nmap <leader>r :Cargo run<CR>
+nmap <leader>t :Cargo test<CR>
+nmap <leader>q :q!<CR>
+
+
+
+" Completion
+" Better display for messages
+set cmdheight=2
+" You will have bad experience for diagnostic messages when it's default 4000.
+set updatetime=300
+
+
+" =============================================================================
+" # Editor settings
+" =============================================================================
+filetype plugin indent on
+set autoindent
+set timeoutlen=300 " http://stackoverflow.com/questions/2158516/delay-before-o-opens-a-new-line
+set encoding=utf-8
+set scrolloff=2
+set hidden
+set nowrap
+set nojoinspaces
+let g:sneak#s_next = 1
+let g:vim_markdown_new_list_item_indent = 0
+let g:vim_markdown_auto_insert_bullets = 0
+let g:vim_markdown_frontmatter = 1
+set printfont=:h10
+set printencoding=utf-8
+set printoptions=paper:letter
+
+
+" Use wide tabs
+set shiftwidth=8
+set softtabstop=8
+set tabstop=8
+set noexpandtab
+
+
+" Use wide tabs
+set shiftwidth=8
+set softtabstop=8
+set tabstop=8
+set noexpandtab
+
+
+" Very magic by default
+nnoremap ? ?\v
+nnoremap / /\v
+cnoremap %s/ %sm/
+
+
+" =============================================================================
+" # GUI settings
+" =============================================================================
+set backspace=2 " Backspace over newlines
+set ttyfast
+" https://github.com/vim/vim/issues/1735#issuecomment-383353563
+set lazyredraw
+set synmaxcol=500
+" Make diffing better: https://vimways.org/2018/the-power-of-diff/
+set showcmd " Show (partial) command in status line.
+set mouse=a " Enable mouse usage (all modes) in terminals
+
+" Show those damn hidden characters
+" Verbose: set listchars=nbsp:¬,eol:¶,extends:»,precedes:«,trail:•
+set listchars=nbsp:¬,extends:»,precedes:«,trail:•
+
+
+
+" =============================================================================
+" # Keyboard shortcuts
+" =============================================================================
+" ; as :
+nnoremap ; :
+
+" Ctrl+j and Ctrl+k as Esc
+" Ctrl-j is a little awkward unfortunately:
+" https://github.com/neovim/neovim/issues/5916
+" So we also map Ctrl+k
+nnoremap <C-j> <Esc>
+inoremap <C-j> <Esc>
+vnoremap <C-j> <Esc>
+snoremap <C-j> <Esc>
+xnoremap <C-j> <Esc>
+cnoremap <C-j> <C-c>
+onoremap <C-j> <Esc>
+lnoremap <C-j> <Esc>
+tnoremap <C-j> <Esc>
+
+nnoremap <C-k> <Esc>
+inoremap <C-k> <Esc>
+vnoremap <C-k> <Esc>
+snoremap <C-k> <Esc>
+xnoremap <C-k> <Esc>
+cnoremap <C-k> <C-c>
+onoremap <C-k> <Esc>
+lnoremap <C-k> <Esc>
+tnoremap <C-k> <Esc>
+
+" Ctrl+h to stop searching
+vnoremap <C-h> :nohlsearch<cr>
+nnoremap <C-h> :nohlsearch<cr>
+
+" Suspend with Ctrl+f
+inoremap <C-f> :sus<cr>
+vnoremap <C-f> :sus<cr>
+nnoremap <C-f> :sus<cr>
+
+" Jump to start and end of line using the home row keys
+map H ^
+map L $
+
+" Neat X clipboard integration
+" ,p will paste clipboard into buffer
+" ,c will copy entire buffer into clipboard
+noremap <leader>p :read !xsel --clipboard --output<cr>
+noremap <leader>c :w !xsel -ib<cr><cr>
+
+
+
+" Open new file adjacent to current file
+nnoremap <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+
+" No arrow keys --- force yourself to use the home row
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
+" Left and right can switch buffers
+nnoremap <left> :bp<CR>
+nnoremap <right> :bn<CR>
+
+" No arrow keys --- force yourself to use the home row
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
+" Left and right can switch buffers
+nnoremap <left> :bp<CR> nnoremap <right> :bn<CR>
+
+" Move by line
+nnoremap j gj
+nnoremap k gk
+
+
+" I can type :help on my own, thanks.
+map <F1> <Esc>
+imap <F1> <Esc>
+
+
+
+:set lazyredraw
+set synmaxcol=128
+syntax sync minlines=256
+
+nnoremap <Leader>cf :e ~/.vimrc
+syntax on
+
+
+"" Move visual block
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
+
+"" copy && paste
+set clipboard=unnamedplus
+

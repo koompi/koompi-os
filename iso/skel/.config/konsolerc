@@ -1,0 +1,16 @@
+[Desktop Entry]
+DefaultProfile=
+
+[KonsoleWindow]
+ShowMenuBarByDefault=false
+
+[MainWindow]
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABgAAAAMkAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+eDP-1 Window-Maximized 1536x864=true
+eDP-1 XPosition=0
+eDP-1 YPosition=60
+
+[TabBar]
+TabBarPosition=Top

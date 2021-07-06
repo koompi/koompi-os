@@ -1,0 +1,11 @@
+[$Version]
+update_info=kscreenlocker.upd:0.1-autolock
+
+[Daemon]
+Timeout=10
+
+[Greeter]
+Theme=org.koompi.theme.koompi-dark
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=file:///usr/share/wallpapers/red-abstract-digital-art-uhdpaper.com-4K-4.298.jpg

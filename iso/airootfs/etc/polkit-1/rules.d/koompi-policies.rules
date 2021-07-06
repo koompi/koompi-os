@@ -1,0 +1,30 @@
+polkit.addRule(function(action, subject) {
+    if (action.id == "org.kde.kcontrol.kcmsddm.save" &&
+        subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+    }
+    if (action.id == "org.kde.kcontrol.kcmsddm.installtheme" &&
+        subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+    }
+    if (action.id == "org.kde.kcontrol.kcmsddm.uninstalltheme" &&
+        subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+    }
+    if (action.id == "org.freedesktop.packagekit.package-install" &&
+        subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+    }
+    if (action.id == "org.freedesktop.packagekit.package-remove" &&
+        subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+    }
+    if (action.id == "org.freedesktop.timedate1.set-ntp" &&
+        subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+    }
+    if (action.id == "org.opensuse.cupspkhelper.mechanism.all-edit" && 
+        subject.isInGroup("wheel")){ 
+        return polkit.Result.YES; 
+    }
+});
